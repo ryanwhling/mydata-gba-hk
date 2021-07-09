@@ -1,0 +1,71 @@
+@font-face{ 
+  font-family: 'robotoslab';
+  src: url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.eot');
+
+  src: url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.eot?iefix') format('eot'),
+  url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.woff') format('woff'),
+  url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+  url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
+
+}
+
+
+/* @font-face{ 
+  font-family: 'robotoslab';
+  src: url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.eot');
+
+  src: url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.eot?iefix') format('eot'),
+  url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.woff') format('woff'),
+  url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+  url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
+
+} */
+
+
+
+:root {
+    --yellow-color:        #fdb940;
+    --turqoise-color:      #16c1f3;
+    --white-color:         #ffffff;
+    --red-color:           #f05522;
+    --lightgrey-color:     #dddddd;
+    --darkgrey-color:      #a3a3aa;
+    --darkestgray-color:   #333333;
+
+    --base-font-family:     'robotoslab';
+    --title-font-family:    'Plain-Regular', sans-serif;
+    --font-bold-family:     'Plain-Bold', sans-serif;
+    --font-weight-bold:     bold;
+
+
+    --p-font-size:          18px;
+    --base-font-size:       16px;
+    --menu-font-size:       14px;
+
+    --border-radius-large:  100px;
+    --border-radius-small:  5px;
+  }
+  body {
+    background: var(--white-color);
+    font-family: var(--base-font-family);
+  }
+
+.logo{
+    border: 5px;
+    
+}
+
+#header{
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'robotoslab';
+
+}
