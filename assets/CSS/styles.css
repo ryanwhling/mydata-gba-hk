@@ -95,38 +95,10 @@ p {
   font-family: var(--base-font-family);
 }
 .logo{
-    border: 5px;
+    margin-bottom: 15px;
+
     
 }
-
-
-
-/* .mobileHide { 
-  display: inline;
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-  .mobileHide { display: none;}
-} */
-
-
-.content-desktop {display: block;}
-.content-mobile {display: none;}
-
-@media screen and (max-width: 768px) {
-
-.content-desktop {display: none;}
-.content-mobile {display: block;}
-
-}
-
-
-
-
-
-
-
-
 
 
 #bold {
@@ -232,6 +204,10 @@ a.langtext:hover{
   padding-top: 40px;
 }
 
+#burger {
+margin-top: 20px;  text-align: right;
+}
+
 #declaration-badge {
   align-self: center;
   vertical-align: center;
@@ -239,7 +215,7 @@ a.langtext:hover{
 }
 
 #row-img{
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 #row{
@@ -248,6 +224,11 @@ a.langtext:hover{
   padding-bottom: 50px;
 }
 
+#bootstrap-overrides hr{
+  padding-bottom: 50px;
+  background-color: white;
+  height: 20px;
+}
 
 .rounded-5 {
   border-radius: 20px;
@@ -268,4 +249,10 @@ a.langtext:hover{
 
 .footer-font{
   font-size: var(--menu-font-size);
+}
+
+@media screen and (max-width:768px){
+  .content-mobile{
+    padding: 0px;
+  }
 }
