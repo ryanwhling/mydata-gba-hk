@@ -8,21 +8,52 @@
   url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
 
 }
+@font-face{ 
+  font-family: 'robotoslabBold';
+  src: url('robotoslab_bold_macroman/RobotoSlab-bold-webfont.eot');
 
+  src: url('robotoslab_bold_macroman/RobotoSlab-bold-webfont.eot?iefix') format('eot'),
+  url('robotoslab_bold_macroman/RobotoSlab-bold-webfont.woff') format('woff'),
+  url('robotoslab_bold_macroman/RobotoSlab-bold-webfont.ttf') format('truetype'),
+  url('robotoslab_bold_macroman/RobotoSlab-bold-webfont.svg#webfont') format('svg');
 
-/* @font-face{ 
-  font-family: 'robotoslab';
-  src: url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.eot');
+}
+@font-face{ 
+  font-family: 'myDataMontserratBold';
+  src: url('myDataMontserrat/montserrat-bold-webfont.eot');
 
-  src: url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.eot?iefix') format('eot'),
-  url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.woff') format('woff'),
-  url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.ttf') format('truetype'),
-  url('./assets/robotoslab-font/font/robotoSlab_regular_macroman/RobotoSlab-Regular-webfont.svg#webfont') format('svg');
+  src: url('myDataMontserrat/montserrat-bold-webfont.eot?iefix') format('eot'),
+  url('myDataMontserrat/montserrat-bold-webfont.woff') format('woff'),
+  url('myDataMontserrat/montserrat-bold-webfont.ttf') format('truetype'),
+  url('myDataMontserrat/montserrat-bold-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+  font-family: 'myDataMontserrat';
+  src: url('myDataMontserrat/montserrat-regular-webfont.eot');
 
-} */
+  src: url('myDataMontserrat/montserrat-regular-webfont.eot?iefix') format('eot'),
+  url('myDataMontserrat/montserrat-regular-webfont.woff') format('woff'),
+  url('myDataMontserrat/montserrat-regular-webfont.ttf') format('truetype'),
+  url('myDataMontserrat/montserrat-regular-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+  font-family: 'myDataMontserratItalic';
+  src: url('myDataMontserrat/montserrat-italic-webfont.eot');
 
+  src: url('myDataMontserrat/montserrat-italic-webfont.eot?iefix') format('eot'),
+  url('myDataMontserrat/montserrat-italic-webfont.woff') format('woff'),
+  url('myDataMontserrat/montserrat-italic-webfont.ttf') format('truetype'),
+  url('myDataMontserrat/montserrat-italic-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+  font-family: 'myDataMontserratSemibold';
+  src: url('myDataMontserrat/montserrat-semibold-webfont.eot');
 
-
+  src: url('myDataMontserrat/montserrat-semibold-webfont.eot?iefix') format('eot'),
+  url('myDataMontserrat/montserrat-semibold-webfont.woff') format('woff'),
+  url('myDataMontserrat/montserrat-semibold-webfont.ttf') format('truetype'),
+  url('myDataMontserrat/montserrat-semibold-webfont.svg#webfont') format('svg');
+}
 :root {
     --yellow-color:        #fdb940;
     --turqoise-color:      #16c1f3;
@@ -32,10 +63,13 @@
     --darkgrey-color:      #a3a3aa;
     --darkestgray-color:   #333333;
 
-    --base-font-family:     'robotoslab';
-    --title-font-family:    'Plain-Regular', sans-serif;
-    --font-bold-family:     'Plain-Bold', sans-serif;
+    --base-font-family:     'myDataMontserrat';
+    --title-font-family:    'robotoslab';
+    --title-bold-family:     'robotoslabBold';
     --font-weight-bold:     bold;
+    --mont-bold:            'myDataMontserratBold';
+    --mont-italic:            'myDataMontserratItalic';
+
 
 
     --p-font-size:          18px;
@@ -45,22 +79,66 @@
     --border-radius-large:  100px;
     --border-radius-small:  5px;
   }
-  body {
+body {
     background: var(--white-color);
     font-family: var(--base-font-family);
-  }
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-bold-family);
+  line-height: 1.3;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--base-font-family);
+}
 .logo{
     border: 5px;
     
 }
 
+
+#bold {
+  font-family: var(--mont-bold);
+}
+
+#italic {
+  font-family: var(--mont-italic);
+}
+#lang {
+  margin:none;
+  display: inline;
+  align-self: right;
+}
+.langtext{
+  color: var(--darkgrey-color);
+  text-decoration: none;
+}
+p.langtext{
+  background-color: #f8f9fa;
+  text-align: right;
+  margin-block-end:0px;
+  padding-top: 5px;
+  padding-right: 15px;
+
+}
+
+a.langtext:hover{
+  color: var(--turqoise-color);
+}
+
 #header{
     padding-left: 50px;
     padding-right: 100px;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
 
+}
+
+.nav-link{
+  font-family: var(--base-font-family);
 }
 
 .nav-item{
@@ -68,4 +146,97 @@
     padding-right: 20px;
     font-family: 'robotoslab';
 
+}
+
+/* .nav-link:hover{
+  line-height: 0.8;
+}
+ */
+
+.gdlr-page-title-wrapper {
+  padding: 40px 0px 0px;
+}
+
+.gdlr-page-title-wrapper {
+  background-image:url("/assets/images/mydata_banner_test.jpg");
+}
+
+.gdlr-page-title-wrapper .gdlr-page-title-overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+
+.gdlr-page-title-overlay {
+  background-color: transparent !important;
+}
+
+
+.gdlr-page-title-wrapper .gdlr-page-title-container {
+  position: relative;
+}
+
+.gdlr-page-title {
+  font-size: 45px;
+  margin: 0px 20px;
+  display: block;
+  /* text-transform: uppercase; */
+  font-weight: 800;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+
+.container {
+  max-width: 1140px;
+}
+.container {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.gdlr-parallax-wrapper{
+  padding-top: 40px;
+}
+
+#declaration-badge {
+  align-self: center;
+  vertical-align: center;
+  background-color: transparent;
+}
+
+#row-img{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#row{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+
+.rounded-5 {
+  border-radius: 20px;
+}
+
+.footer{
+  background-color: var(--lightgrey-color);
+}
+
+#row-2{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#row-1{
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.footer-font{
+  font-size: var(--menu-font-size);
 }
