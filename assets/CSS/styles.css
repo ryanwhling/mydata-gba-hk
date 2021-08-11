@@ -262,3 +262,39 @@ margin-top: 20px;  text-align: right;
   padding-left: 30px;
   padding-right: 30px;
 }
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: var(--turqoise-color) !important;
+  border-color: var(--turqoise-color) !important;
+}
+
+
+
+
+.gdlr-button {
+	display: inline-block;
+	font-size: 13px;
+	padding: 17px 25px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	outline: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	border: none;
+}
+.gdlr-button.with-border {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+}
