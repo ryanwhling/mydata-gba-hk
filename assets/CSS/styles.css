@@ -298,3 +298,11 @@ margin-top: 20px;  text-align: right;
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
 }
+
+
+
+video_frame{
+  vertical-align: center;
+  align-self: center;
+
+}
